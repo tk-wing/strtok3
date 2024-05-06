@@ -1,7 +1,6 @@
-import { ITokenizer, IFileInfo, IReadChunkOptions } from './types.js';
+import { ITokenizer, IFileInfo, IReadChunkOptions } from './types';
 import { EndOfStreamError } from 'peek-readable';
 import { IGetToken, IToken } from '@tokenizer/token';
-import { Buffer } from 'node:buffer';
 
 interface INormalizedReadChunkOptions extends IReadChunkOptions {
   offset: number;
